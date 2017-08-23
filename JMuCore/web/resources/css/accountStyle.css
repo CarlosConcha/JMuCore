@@ -1,0 +1,255 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-jun-2017, 19:50:31
+    Author     : carlos
+*/
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+html , body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+*{
+    font-family: 'Oswald', sans-serif !important;
+}
+body {
+   background-image: url("#{resource['pictures:backorigin.jpg']}");
+   background-position: -500px top;
+   background-repeat: no-repeat;
+   font-family: 'Oswald', sans-serif;
+
+}
+.flex-body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.container-left {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.container-center {
+    flex-grow: 50;
+    margin-top: 50px;
+}
+.img-avatar img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: #5d5d5d solid 1px;
+    position: relative;
+    top:2px;
+}
+.avatar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100px 100px 0px 0px / 100px 100px 0px 0px;
+    border:#585858 solid 1px;
+    width: 200px;
+    background: rgba(64, 64, 64, 0.9);
+    color: #fdddc6;
+    z-index: 999;
+}
+
+.com-container {
+    width: 90%;
+    height: 80%;
+    box-sizing: border-box;
+   
+}
+#social-fb {
+    
+}
+.header-account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    right: 60px;
+    border-radius: 3px;
+    border: #8c8c8c solid 1px;
+}
+.notices {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.notice {
+    position: relative;
+    right: -225px;
+    font-size: 25px;
+    background: #0a0d12;
+    color: #ffffff;
+    padding: 3px 5px;
+    animation-name: noticemove;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+@keyframes noticemove {
+    0% {right:-300px;}
+    25% {right:0px;}
+    50% {right:300px;}
+    75% {right:600px;}
+    100% {right:1100px;}
+}
+.body-right {
+    width: 80%;
+    margin-top: 30px;
+}
+.circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 50% 50% 0 0;
+    border: #8c8c8c solid 1px;
+    position: absolute;
+    background: linear-gradient(#0a0d12, #0b0b0d);
+    left: -145px;
+    bottom:-81px;
+}
+.menu-acc {
+    perspective: 500px;
+}
+.menu-left {
+    margin-top: 20px;
+    
+}
+.ui-menu, .ui-widget-header {
+    background: rgba(232, 232, 232, 0.85);
+    
+    border: none;
+    box-shadow: none;
+    text-shadow:none;
+    color:#ced0df;
+}
+.ui-menu{
+    border-radius: 0;
+    transform: rotateY(13deg);
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 9999;
+}
+.menu-acc .ui-widget-header {
+     font-family: 'Oswald', sans-serif;
+     width: 100% !important;
+     border-radius: 0px !important;
+     background: #353d5a;
+     margin: 0px !important;
+     display: flex;
+}
+
+
+.ui-menuitem .ui-menuitem-link:hover{
+    box-shadow: none;
+    text-shadow:none;
+    border: none;
+    background: #121212;
+    border-radius: 0px;
+    color: #ffffff;
+    animation: menuhover;
+    animation-duration: 0.3s;
+}
+.ui-menuitem-link {
+     font-family: 'Oswald', sans-serif;
+     width: 100% !important;
+}
+.menu-acc .ui-menu {
+    margin: 0;
+    padding: 0;
+    
+}
+@keyframes menuhover{
+    from{width:1%;}
+    to{width:100%;}
+}
+.non-fb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-image: url("#{resource['pictures:shadows.png']}");
+    color:#f8ffd0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 29px;
+    font-weight: bold;
+}
+.like-fb{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background:#ffffff;
+    color:#f8ffd0;
+    font-size: 29px;
+    font-weight: bold;
+}
+#msg-like {
+    font-size: 16px;
+    color: #0b0b0d;
+}
+#form-power > div > .ui-widget-content {
+    border:none;
+    background: url("#{resource['pictures:shadows.png']}");
+}
+#form-reset > div > .ui-widget-content {
+    border:none;
+    background: url("#{resource['pictures:shadows.png']}");
+}
+#form-reset > .ui-widget-content {
+    background: none;
+    border:none;
+}
+.ui-datagrid-column > .ui-widget-content {
+    background: rgba(5, 2, 23, 0.95);
+    border:none;
+    border-radius: 0px;
+}
+.ui-widget-content > table {
+    width: 100%;
+}
+.container-center .ui-widget-header {
+    font-family: 'Oswald', sans-serif;
+    background: #d60000;
+    border-radius: 0px;
+    transform: skew(-5deg);
+    text-align: center;
+    color:#ffffff;
+}
+.container-center .ui-widget-content a {
+    display: block;
+    background: #eaeaea;
+    transform: skew(-5deg);
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    color:#8c8c8c !important;
+    font-weight: bold;
+}
+.ui-icon {
+    filter: grayscale(1);
+}
+.menu-left button[role="button"] {
+    margin-top: 20px;
+    border-radius: 0px;
+    
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rankg>
+    <lstRankG>
+        <rankGuild>
+            <nameGuild>RunBich</nameGuild>
+            <nameMaster>iMrShelo</nameMaster>
+            <score>37</score>
+        </rankGuild>
+        <rankGuild>
+            <nameGuild>PVPWarS</nameGuild>
+            <nameMaster>Bandigo16</nameMaster>
+            <score>8</score>
+        </rankGuild>
+        <rankGuild>
+            <nameGuild>lChromel</nameGuild>
+            <nameMaster>lQueenl</nameMaster>
+            <score>7</score>
+        </rankGuild>
+    </lstRankG>
+</rankg>

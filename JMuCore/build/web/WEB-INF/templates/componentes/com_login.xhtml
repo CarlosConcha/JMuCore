@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <ui:component>
+        <div class="form-login">
+            <p:graphicImage value="#{resource['pictures:logo.png']}" width="500px" height="400px"/>
+            
+            <h:form>
+                <p:growl id="growl-error" sticky="true" showDetail="true" /> 
+                <div class="form-user">
+                    <p:outputLabel value="#{word.user}" for="user-id" />
+                    <p:inputText id="user-id" value="#{bmLogin.user}" placeholder="#{word.userPlace}" />
+                </div>
+                <div class="form-pass">
+                    <p:outputLabel value="#{word.pass}" for="user-pass" />
+                    <p:password id="user-pass" value="#{bmLogin.pass}" placeholder="#{word.passHolder}" autocomplete="false"/>
+                </div>
+                <div class="btn-login">
+                    <p:commandButton value="#{word.enter}" ajax="false" action="#{bmLogin.validLogin()}" />
+                    <p:commandButton value="Facebook" ajax="false" action="#{bmLogin.validLogin}" disabled="true"/>
+                    
+                </div>
+            </h:form>
+        </div>
+    </ui:component>
+</html>
+

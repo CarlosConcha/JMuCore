@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://vps141411.vps.ovh.ca:8080/JMuCore-WS-1.0-SNAPSHOT/WebServiceJMu" uri="wsdl/vps141411.vps.ovh.ca_8080/JMuCore-WS-1.0-SNAPSHOT/webservicejmu.xml"/>
+    <system systemId="http://vps141411.vps.ovh.ca:8080/JMuCore-WS-1.0-SNAPSHOT/WebServiceJMu?wsdl" uri="wsdl/vps141411.vps.ovh.ca_8080/JMuCore-WS-1.0-SNAPSHOT/WebServiceJMu.wsdl"/>
+    <system systemId="http://vps141411.vps.ovh.ca:8080/JMuCore-WS-1.0-SNAPSHOT/WebServiceJMu?xsd=1" uri="wsdl/vps141411.vps.ovh.ca_8080/JMuCore-WS-1.0-SNAPSHOT/WebServiceJMu.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/JMuCore-WS/WebServiceJMu?wsdl" uri="wsdl/localhost_8080/JMuCore-WS/WebServiceJMu.wsdl"/>
+    <system systemId="http://localhost:8080/JMuCore-WS/WebServiceJMu?xsd=1" uri="wsdl/localhost_8080/JMuCore-WS/WebServiceJMu.xsd_1.xsd"/>
+</catalog>

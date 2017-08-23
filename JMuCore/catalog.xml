@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/JMuCore/consume/statistics.xml" uri="src/conf/xml-resources/jaxb/asdasdds/localhost_8080/JMuCore/consume/statistics.xml"/>
+    <system systemId="http://localhost:8080/ServicioWebV1/servicioWeb?WSDL" uri="src/conf/xml-resources/web-service-references/servicioWeb/wsdl/localhost_8080/ServicioWebV1/servicioWeb.wsdl"/>
+    <system systemId="http://localhost:8585/ServicioWebV1/servicioWeb?WSDL" uri="src/conf/xml-resources/web-service-references/servicioWeb/wsdl/localhost_8585/ServicioWebV1/servicioWeb.wsdl"/>
+    <system systemId="http://localhost:8585/ServicioWebV1/servicioWeb?wsdl" uri="src/conf/xml-resources/web-service-references/servicioWeb/wsdl/localhost_8585/ServicioWebV1/servicioWeb.wsdl"/>
+    <system systemId="http://localhost:8585/ServicioWebV1/servicioWeb?xsd=1" uri="src/conf/xml-resources/web-service-references/servicioWeb/wsdl/localhost_8585/ServicioWebV1/servicioWeb.xsd_1.xsd"/>
+    <system systemId="http://vps141411.vps.ovh.ca:8080/web/servicioWeb?WSDL" uri="src/conf/xml-resources/web-service-references/servicioWeb/wsdl/vps141411.vps.ovh.ca_8080/web/servicioWeb.wsdl"/>
+    <system systemId="http://vps141411.vps.ovh.ca:8080/web/servicioWeb?xsd=1" uri="src/conf/xml-resources/web-service-references/servicioWeb/wsdl/vps141411.vps.ovh.ca_8080/web/servicioWeb.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServicioWebV1/servicioWeb?wsdl" uri="src/conf/xml-resources/web-service-references/servicioWeb/wsdl/localhost_8080/ServicioWebV1/servicioWeb.wsdl"/>
+    <system systemId="http://localhost:8080/ServicioWebV1/servicioWeb?xsd=1" uri="src/conf/xml-resources/web-service-references/servicioWeb/wsdl/localhost_8080/ServicioWebV1/servicioWeb.xsd_1.xsd"/>
+    <system systemId="http://vps141411.vps.ovh.ca:8080/JMuCore-WS-1.0-SNAPSHOT/WebServiceJMu" uri="src/conf/xml-resources/web-service-references/WebServiceJMu/wsdl/vps141411.vps.ovh.ca_8080/JMuCore-WS-1.0-SNAPSHOT/webservicejmu.xml"/>
+    <system systemId="http://vps141411.vps.ovh.ca:8080/JMuCore-WS-1.0-SNAPSHOT/WebServiceJMu?wsdl" uri="src/conf/xml-resources/web-service-references/WebServiceJMu/wsdl/vps141411.vps.ovh.ca_8080/JMuCore-WS-1.0-SNAPSHOT/WebServiceJMu.wsdl"/>
+    <system systemId="http://vps141411.vps.ovh.ca:8080/JMuCore-WS-1.0-SNAPSHOT/WebServiceJMu?xsd=1" uri="src/conf/xml-resources/web-service-references/WebServiceJMu/wsdl/vps141411.vps.ovh.ca_8080/JMuCore-WS-1.0-SNAPSHOT/WebServiceJMu.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/JMuCore-WS/WebServiceJMu?wsdl" uri="src/conf/xml-resources/web-service-references/WebServiceJMu/wsdl/localhost_8080/JMuCore-WS/WebServiceJMu.wsdl"/>
+    <system systemId="http://localhost:8080/JMuCore-WS/WebServiceJMu?xsd=1" uri="src/conf/xml-resources/web-service-references/WebServiceJMu/wsdl/localhost_8080/JMuCore-WS/WebServiceJMu.xsd_1.xsd"/>
+</catalog>

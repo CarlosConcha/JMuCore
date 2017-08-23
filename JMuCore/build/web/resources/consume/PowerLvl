@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<powerLvl delReset="true">
+    <addLvl>16000</addLvl>
+    <reqMasterLvl>0</reqMasterLvl>
+    <reqReset>200</reqReset>
+</powerLvl>

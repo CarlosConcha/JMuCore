@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+    <ui:component>
+        <div class="rank-content">
+            
+            <div class="rank-guild">
+                <h:graphicImage class="img-rankelf"  value="#{resource['pictures:rankingelf_1.png']}" />
+                <div class="rank-parse">
+                    <div class="cube-rank">
+                        <c:forEach var="rankG" items="#{mbEstadisticas.rankG.lstRankG}">
+                    <div class="rankPK-name">
+                        <p><h:outputText value="#{rankG.nameGuild}" /> </p>
+                        <p><h:outputText value="#{rankG.nameMaster}" /> </p>
+                        <p><h:outputText value="#{rankG.score}" /> </p>
+                    </div>
+                </c:forEach>
+                    </div>
+                </div>
+                <section class="shadows"></section>
+            </div>
+            <div class="rank-char">
+                <h:graphicImage class="img-rankdw"  value="#{resource['pictures:rankingdw.png']}" />
+                <div class="rank-parse">
+                    <c:forEach var="rankChar" items="#{mbEstadisticas.rankChar.lstchar}">
+                    <div class="rankPK-name">
+                        <p><h:outputText value="#{rankChar.name}" /> </p>
+                        <p><h:outputText value="#{rankChar.resets}" /></p>
+                    </div>
+                </c:forEach>
+                </div>
+                <section class="shadows"></section>
+            </div>
+            
+            <div class="rank-pk">
+                <h:graphicImage class="img-rankdk"  value="#{resource['pictures:rankingdk.png']}" />
+                <div class="rank-parse">
+                    <c:forEach var="rankPK" items="#{mbEstadisticas.rank_PK.lstPK}">
+                    <div class="rankPK-name">
+                        <p><h:outputText value="#{rankPK.name}" /> </p>
+                        <p><h:outputText value="#{rankPK.killcount}" /></p>
+                    </div>
+                </c:forEach>
+                </div>
+                <section class="shadows"></section>
+            </div>
+            <div class="lord-cs">
+                <h:graphicImage class="img-rankcs"  value="#{resource['pictures:castle2.png']}" />
+                <div class="rank-parse">
+                    <p><h:outputText value="#{mbEstadisticas.rankCastleSieg.cS.owner}" /> </p>
+                    <p><h:graphicImage value="#{resource['logos:logoCS.png']}" /> </p>
+                </div>
+                <section class="shadows"></section>
+            </div>
+        </div>
+    </ui:component>
+</html>
+

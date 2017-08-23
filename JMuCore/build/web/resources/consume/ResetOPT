@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OptReset isMoney="true">
+    <maxReset>999</maxReset>
+    <levelNeed>401</levelNeed>
+    <moneyNeed>10000000</moneyNeed>
+</OptReset>

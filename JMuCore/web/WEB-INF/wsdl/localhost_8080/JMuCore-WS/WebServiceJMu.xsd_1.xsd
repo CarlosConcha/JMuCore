@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws.jmucore.safiro.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.jmucore.safiro.com/">
+
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="addCredit" type="tns:addCredit"/>
+
+<xs:element name="addCreditResponse" type="tns:addCreditResponse"/>
+
+<xs:element name="estadisticas" type="tns:estadisticas"/>
+
+<xs:element name="estadisticasResponse" type="tns:estadisticasResponse"/>
+
+<xs:element name="getCharacterAccount" type="tns:getCharacterAccount"/>
+
+<xs:element name="getCharacterAccountResponse" type="tns:getCharacterAccountResponse"/>
+
+<xs:element name="getRankCS" type="tns:getRankCS"/>
+
+<xs:element name="getRankCSResponse" type="tns:getRankCSResponse"/>
+
+<xs:element name="getRankCharacters" type="tns:getRankCharacters"/>
+
+<xs:element name="getRankCharactersResponse" type="tns:getRankCharactersResponse"/>
+
+<xs:element name="getRankGuild" type="tns:getRankGuild"/>
+
+<xs:element name="getRankGuildResponse" type="tns:getRankGuildResponse"/>
+
+<xs:element name="getRankPK" type="tns:getRankPK"/>
+
+<xs:element name="getRankPKResponse" type="tns:getRankPKResponse"/>
+
+<xs:element name="isFBLike" type="tns:isFBLike"/>
+
+<xs:element name="isFBLikeResponse" type="tns:isFBLikeResponse"/>
+
+<xs:element name="loginUser" type="tns:loginUser"/>
+
+<xs:element name="loginUserResponse" type="tns:loginUserResponse"/>
+
+<xs:element name="rankGuild" type="tns:rankGuild"/>
+
+<xs:element name="setFBLike" type="tns:setFBLike"/>
+
+<xs:element name="setFBLikeResponse" type="tns:setFBLikeResponse"/>
+
+<xs:element name="setLevelChar" type="tns:setLevelChar"/>
+
+<xs:element name="setLevelCharResponse" type="tns:setLevelCharResponse"/>
+
+<xs:complexType name="getRankGuild">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getRankGuildResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rankGuild" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rankGuild">
+<xs:sequence>
+<xs:element name="nameGuild" type="xs:string" minOccurs="0"/>
+<xs:element name="nameMaster" type="xs:string" minOccurs="0"/>
+<xs:element name="score" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="isFBLike">
+<xs:sequence>
+<xs:element name="like" type="tns:fbLike" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fbLike">
+<xs:sequence>
+<xs:element name="account" type="xs:string" minOccurs="0"/>
+<xs:element name="fbLike" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="isFBLikeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCharacterAccount">
+<xs:sequence>
+<xs:element name="login" type="tns:login" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="country" type="xs:string" minOccurs="0"/>
+<xs:element name="FBLike" type="xs:string" minOccurs="0"/>
+<xs:element name="gender" type="xs:int"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="lastIp" type="xs:string" minOccurs="0"/>
+<xs:element name="mail" type="xs:string" minOccurs="0"/>
+<xs:element name="outDays" type="xs:string" minOccurs="0"/>
+<xs:element name="pass" type="xs:string" minOccurs="0"/>
+<xs:element name="user" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCharacterAccountResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:characterbyID" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="characterbyID">
+<xs:sequence>
+<xs:element name="accountId" type="xs:string" minOccurs="0"/>
+<xs:element name="dexterity" type="xs:int"/>
+<xs:element name="energy" type="xs:int"/>
+<xs:element name="leadership" type="xs:int"/>
+<xs:element name="level" type="xs:int"/>
+<xs:element name="mapN" type="xs:int"/>
+<xs:element name="money" type="xs:int"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="PKlvl" type="xs:int"/>
+<xs:element name="points" type="xs:int"/>
+<xs:element name="reset" type="xs:int"/>
+<xs:element name="strength" type="xs:int"/>
+<xs:element name="vitality" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setLevelChar">
+<xs:sequence>
+<xs:element name="character" type="tns:characterbyID" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setLevelCharResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRankCS">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getRankCSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rankCS" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rankCS">
+<xs:sequence>
+<xs:element name="owner" type="xs:string" minOccurs="0"/>
+<xs:element name="simbol" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRankPK">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getRankPKResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rankPK" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rankPK">
+<xs:sequence>
+<xs:element name="killcount" type="xs:int"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addCredit">
+<xs:sequence>
+<xs:element name="credits" type="tns:credits" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="credits">
+<xs:sequence>
+<xs:element name="credit" type="xs:int"/>
+<xs:element name="credit2" type="xs:int"/>
+<xs:element name="user" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addCreditResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRankCharacters">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getRankCharactersResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rankChar" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rankChar">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="resets" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setFBLike">
+<xs:sequence>
+<xs:element name="like" type="tns:fbLike" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setFBLikeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="estadisticas">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="estadisticasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:statistics" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="statistics">
+<xs:sequence>
+<xs:element name="charOnline" type="xs:int"/>
+<xs:element name="drop" type="xs:int"/>
+<xs:element name="exp" type="xs:int"/>
+<xs:element name="totalAcc" type="xs:int"/>
+<xs:element name="totalGuild" type="xs:int"/>
+<xs:element name="totalUser" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginUser">
+<xs:sequence>
+<xs:element name="user" type="xs:string" minOccurs="0"/>
+<xs:element name="pwd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginUserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:login" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

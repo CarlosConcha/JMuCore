@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RankCharacter>
+    <ListRank>
+        <pj>
+            <name>Baam</name>
+            <resets>300</resets>
+        </pj>
+        <pj>
+            <name>Mistybaby</name>
+            <resets>290</resets>
+        </pj>
+        <pj>
+            <name>VNSUm</name>
+            <resets>283</resets>
+        </pj>
+    </ListRank>
+</RankCharacter>

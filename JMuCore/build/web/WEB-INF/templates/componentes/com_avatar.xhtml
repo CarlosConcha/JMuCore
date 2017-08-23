@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <ui:component>
+        <div class="avatar-content">
+            <div class="img-avatar">
+                <h:graphicImage value="#{resource['pictures:default-avatar.png']}" />
+            </div>
+            <div class="info-account">
+                <h:panelGrid columns="2">
+                    <f:facet name="info-session">
+                        <h:outputText value="#{word.account}" />
+                    </f:facet>
+                    <h:outputText value="#{word.account}" />
+                    <h:outputText value="#{bmAccount.user.user}" />
+
+                    <h:outputText value="#{word.gender}" />
+                    <h:outputText value="#{bmAccount.user.gender}" />
+
+                    <h:outputText value="#{word.country}" />
+                    <h:outputText value="#{bmAccount.user.country}" />
+
+                    <h:outputText value="#{word.email}" />
+                    <h:outputText value="#{bmAccount.user.mail}" />
+
+                    <h:outputText value="#{word.lastday}" />
+                    <h:outputText value="#{bmAccount.user.outDays}" />
+
+                    <h:outputText value="#{word.lastip}" />
+                    <p:link value="#{bmAccount.user.lastIp}" href="http://es.geoipview.com/?q=#{bmAccount.user.lastIp}" target="_blank"  />
+                </h:panelGrid>
+            </div>
+        </div>
+    </ui:component>
+</html>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<Menu>
+    <subMenu>
+        <items use="true">
+            <value>reset</value>
+            <outcome>com_reset</outcome>
+            <icon>fa-refresh</icon>
+        </items>
+        <items use="false">
+            <value>addgift</value>
+            <outcome>com_giveGift</outcome>
+            <icon>fa-refresh</icon>
+        </items>
+        <items use="true">
+            <value>powerlevel</value>
+            <outcome>com_powerlevel</outcome>
+            <icon>fa-refresh</icon>
+        </items>
+    </subMenu>
+</Menu>

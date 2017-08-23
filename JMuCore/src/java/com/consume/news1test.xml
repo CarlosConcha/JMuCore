@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<news>
+    <notices>
+        <notice type="evento">
+            <title>titulo2</title>
+            <body>noticia o evento detalles aqui 2</body>
+            <date>Martes 13 de junio2</date>
+        </notice>
+        <notice type="noticia">
+            <title>titulo1</title>
+            <body>noticia o evento detalles aqui</body>
+            <date>Martes 13 de junio</date>
+        </notice>
+    </notices>
+</news>

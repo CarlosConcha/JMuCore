@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:component>
+        <div class="intro-video">
+            <!--
+         <video id="video-play" autoplay="" loop="" >
+
+                <source src="http://192.168.1.6:8080/JMuCore/resources/video/introv2.mp4" type="video/mp4" />
+                video no soportado
+        </video>
+           --> 
+        </div>
+        
+        <div class="server-estadis">
+            <div class="normal">
+                
+                <div class="info-sv">
+                    <h:outputLabel for="total-acc" value="#{word.acounts}" />
+                    <h:outputText id="total-acc" value="#{mbEstadisticas.estadistic.totalAcc}" />
+                </div> 
+                <div class="info-sv">
+                    <h:outputLabel for="total-user" value="#{word.characters}" />
+                    <h:outputText id="total-user" value="#{mbEstadisticas.estadistic.totalUser}" />
+                </div> 
+                <div class="info-sv">
+                    <h:outputLabel for="total-guild" value="#{word.guilds}" />
+                    <h:outputText id="total-guild" value="#{mbEstadisticas.estadistic.totalGuild}" />
+                </div> 
+                <div class="info-sv">
+                    <h:outputLabel for="exp-sv" value="#{word.exp}" />
+                    <h:outputText id="exp-sv" value="#{mbEstadisticas.estadis.exp}" />
+                </div> 
+                <div class="info-sv">
+                    <h:outputLabel for="drop" value="#{word.drop}" />
+                    <h:outputText id="drop" value="#{mbEstadisticas.estadis.drop}" />
+                </div>
+                <break></break>
+                <div class="info-sv">           
+                    <h:outputLabel for="pj-online" value="#{word.useron}" />
+                    <h:outputText id="pj-online" value="#{mbEstadisticas.estadistic.charOnline}" />
+                </div> 
+                <div class="info-sv">
+                    <h:outputLabel for="status" value="#{word.on}" />
+                    <h:outputText id="status" value="#{mbEstadisticas.estadis.online}" />
+                </div> 
+                  
+                   
+            </div>
+            
+        </div>
+    </ui:component>
+</html>
+

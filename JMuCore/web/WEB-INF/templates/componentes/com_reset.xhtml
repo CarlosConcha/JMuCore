@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:component>
+        
+        <h:form id="form-reset">
+            <p:growl id="msg" showDetail="true" />
+            <p:dataGrid id="characterDG" var="character" value="#{bmResetChar.charList}" columns="3" rows="6" >
+
+                <p:panel header="#{character.name}" >
+                    <h:panelGrid columns="2">
+                    <h:outputLabel  for="txtvalue" value="#{word.lvl}" />
+                    <h:outputText id="txtvalue" value="#{character.level}" />
+                    <h:outputLabel for="txtmoney" value="#{word.money}" />
+                    <h:outputText id="txtmoney" value="#{character.money}" />
+                    <h:outputLabel for="txtreset" value="#{word.reset}" />
+                    <h:outputText id="txtreset" value="#{character.reset}" />
+                    <f:facet name="footer">
+                    <p:commandLink update=":form-reset:msg" value="#{word.doreset}" action="#{bmResetChar.resetChar()}" >
+                        <f:setPropertyActionListener value="#{character}" target="#{bmResetChar.characterSelect}" />
+                    </p:commandLink>
+                    </f:facet>
+                    </h:panelGrid>
+                </p:panel>
+                    
+            </p:dataGrid>
+            <p:panel header="#{word.reqReset}" toggleable="true" collapsed="true">
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{word.lvlneed}" />
+                    <h:outputText value="#{bmReqReset.reqrst.levelNeed}" />
+                    
+                    <h:outputText value="#{word.rstmax}" />
+                    <h:outputText value="#{bmReqReset.reqrst.maxReset}" />
+                    
+                    <h:outputText value="#{word.moneyneed}" />
+                    <h:outputText value="#{bmReqReset.reqrst.moneyNeed}" />
+                </h:panelGrid>
+            </p:panel>
+        </h:form>
+    </ui:component>
+</html>
+
